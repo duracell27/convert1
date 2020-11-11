@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    width: 870px;
+}
+
+.sidebar {
+    width: 270px;
+}
+
+.card {
+    background-color: #fff;
+    width: 270px;
+    position: relative;
+}
+
+.card__bages {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    right: 15px;
+}
+
+.card__bages>*+* {
+    margin-left: 10px;
+}
+
+.card__bage {
+    height: 22px;
+    padding: 0 10px;
+    background-color: #777777;
+    border-radius: 4px;
+    display: inline-block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    color: #000000;
+}
+
+.card__bage--class {
+    background-color: #ffcf26;
+}
+
+.card__bage--credit {
+    background-color: #11be75;
+    color: #fff;
+}
+
+.card__img {}
+
+.card__content {
+    padding: 15px 15px 20px;
+}
+
+.card__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.16;
+    color: #000000;
+}
+
+.card__term {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #000000;
+}
+
+.card__metro {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #000000;
+}
+
+.card__metro::before {
+    content: '';
+    width: 16px;
+    height: 11px;
+    margin-right: 10px;
+    background-image: url(../img/metro.svg);
+    background-repeat: no-repeat;
+    background-size: initial;
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.card__address {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #777777;
+}
