@@ -165,7 +165,9 @@ img {
 
 /* sidebar */
 
-.widget {}
+.widget+.widget {
+    margin-top: 30px;
+}
 
 .widget__title {
     font-weight: bold;
@@ -239,4 +241,222 @@ img {
 
 .location__checkbox:checked+.location__btn {
     background-color: #FFCF26;
+}
+
+.radio {
+    display: block;
+    cursor: pointer;
+}
+
+.radio+.radio {
+    margin-top: 15px;
+}
+
+.radio__real {
+    appearance: none;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    opacity: 0;
+}
+
+.radio__real:checked+.radio__fake::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #3c3c3c;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.radio__real:checked+.radio__fake {
+    background-color: #FFE074;
+}
+
+.radio__fake {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #777777;
+    margin-right: 10px;
+    vertical-align: text-top;
+}
+
+.radio__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    color: #000;
+}
+
+.radio__real:checked~.radio__title {
+    font-weight: 500;
+}
+
+.checkbox {
+    display: block;
+    cursor: pointer;
+}
+
+.checkbox+.checkbox {
+    margin-top: 15px;
+}
+
+.checkbox__real {
+    appearance: none;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    opacity: 0;
+}
+
+.checkbox__real:checked+.checkbox__fake::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/check.svg);
+    background-repeat: no-repeat;
+    background-size: initial;
+    position: absolute;
+}
+
+.checkbox__real:checked+.checkbox__fake {
+    background-color: #FFE074;
+}
+
+.checkbox__fake {
+    position: relative;
+    display: inline-block;
+    border-radius: 2px;
+    width: 20px;
+    height: 20px;
+    background-color: #FFFFFF;
+    border: 1px solid #777777;
+    margin-right: 10px;
+    vertical-align: text-top;
+}
+
+.checkbox__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    color: #000;
+}
+
+.checkbox__real:checked~.checkbox__title {
+    font-weight: 500;
+}
+
+.widget__hidden {
+    display: none;
+    margin-top: 15px;
+}
+
+.widget__show-hidden {
+    cursor: pointer;
+    margin-top: 15px;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.18;
+    color: #4290C9;
+    padding: 0;
+}
+
+.widget__show-hidden:hover {
+    opacity: 0.7;
+}
+
+.toggle {
+    cursor: pointer;
+}
+
+.toggle__real {
+    appearance: none;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    opacity: 0;
+}
+
+.toggle__fake {
+    vertical-align: text-top;
+    margin-right: 10px;
+    position: relative;
+    display: inline-block;
+    width: 37px;
+    height: 20px;
+    background-color: #c4c4c4;
+    border-radius: 10px;
+}
+
+.toggle__fake::before {
+    position: absolute;
+    content: '';
+    width: 16px;
+    height: 16px;
+    background-color: #3C3C3C;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: all .2s ease-in;
+}
+
+.toggle__real:checked+.toggle__fake::before {
+    left: 19px;
+}
+
+.toggle__real:checked+.toggle__fake {
+    background-color: #FFE074;
+}
+
+.toggle__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    color: #000;
+}
+
+.toggle__real:checked~.toggle__title {
+    font-weight: 500;
+}
+
+.form-btn {
+    height: 50px;
+    width: 100%;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    background-color: transparent;
+    font-family: inherit;
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 50px;
+    cursor: pointer;
+    color: #3C3C3C;
+}
+
+.form-btn>img {
+    display: inline-block;
+    margin-top: -2px;
+    vertical-align: middle;
+}
+
+.form-btn+.form-btn {
+    margin-top: 10px;
+}
+
+.form-btn--submit {
+    background-color: #FFCF26;
+    color: #000;
+    border: none;
 }
