@@ -13,10 +13,17 @@ img {
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1200px;
     padding-top: 60px;
     padding-bottom: 60px;
     margin: 0 auto;
+    padding: 60px 15px;
+}
+
+@media(max-width: 1200px) {
+    .container {
+        width: 830px;
+    }
 }
 
 .row {
@@ -28,8 +35,19 @@ img {
     width: 870px;
 }
 
+.main+.sidebar {
+    margin-left: 30px;
+}
+
 .sidebar {
     width: 270px;
+    min-width: 200px;
+}
+
+@media(max-width: 829px) {
+    .sidebar {
+        display: none;
+    }
 }
 
 .card {
@@ -166,7 +184,7 @@ img {
 /* sidebar */
 
 .widget+.widget {
-    margin-top: 30px;
+    margin-top: 33px;
 }
 
 .widget__title {
@@ -175,7 +193,7 @@ img {
     line-height: 1.16;
     color: #000;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
 }
 
 .widget__title::after {
@@ -186,8 +204,8 @@ img {
     background-image: url(../img/chevron-up.svg);
     background-repeat: no-repeat;
     background-size: initial;
-    right: 0;
-    top: 0;
+    right: 1px;
+    top: -1px;
 }
 
 .widget__body {}
@@ -213,7 +231,7 @@ img {
 
 .location__btn {
     font-family: inherit;
-    height: 50px;
+    height: 48px;
     font-weight: 500;
     font-size: 14px;
     line-height: 50px;
@@ -283,7 +301,7 @@ img {
     height: 20px;
     background-color: #FFFFFF;
     border: 1px solid #777777;
-    margin-right: 10px;
+    margin-right: 7px;
     vertical-align: text-top;
 }
 
@@ -337,7 +355,7 @@ img {
     height: 20px;
     background-color: #FFFFFF;
     border: 1px solid #777777;
-    margin-right: 10px;
+    margin-right: 7px;
     vertical-align: text-top;
 }
 
