@@ -11,6 +11,12 @@
 </head>
 
 <body>
+    <div class="toggle-sidebar">
+        <button class="menu-icon-wrapper">
+            <div class="menu-icon"></div>
+        </button>
+    </div>
+    
     <div class="container">
         <div class="row">
             <div class="main cards-holder">
@@ -149,12 +155,64 @@
                         <div class="card__address">пр. Льва Толстого 180А</div>
                     </div>
                 </div>
+
+                
+                    <div class="card card-hidden">
+                        <div class="card__bages">
+                            <div class="card__bage card__bage--class">Комфорт</div>
+                            <div class="card__bage card__bage--credit">Рассрочка 12 мес.</div>
+                        </div>
+                        <div class="card__img">
+                            <img src="/img/mainImg.jpg" alt="ЖК Ильинские луга">
+                        </div>
+                        <div class="card__content">
+                            <a href="#" class="card__title">ЖК Ильинские луга</a>
+                            <div class="card__term">Срок сдачи до 4 кв. 2022 г.</div>
+                            <div class="card__metro">Октябрьская</div>
+                            <div class="card__address">пр. Льва Толстого 180А</div>
+                        </div>
+                    </div>
+                    <div class="card card-hidden">
+                        <div class="card__bages">
+                            <div class="card__bage card__bage--class">Комфорт</div>
+                            <div class="card__bage card__bage--credit">Рассрочка 12 мес.</div>
+                        </div>
+                        <div class="card__img">
+                            <img src="/img/mainImg.jpg" alt="ЖК Ильинские луга">
+                        </div>
+                        <div class="card__content">
+                            <a href="#" class="card__title">ЖК Ильинские луга</a>
+                            <div class="card__term">Срок сдачи до 4 кв. 2022 г.</div>
+                            <div class="card__metro">Октябрьская</div>
+                            <div class="card__address">пр. Льва Толстого 180А</div>
+                        </div>
+                    </div>
+                    <div class="card card-hidden">
+                        <div class="card__bages">
+                            <div class="card__bage card__bage--class">Комфорт</div>
+                            <div class="card__bage card__bage--credit">Рассрочка 12 мес.</div>
+                        </div>
+                        <div class="card__img">
+                            <img src="/img/mainImg.jpg" alt="ЖК Ильинские луга">
+                        </div>
+                        <div class="card__content">
+                            <a href="#" class="card__title">ЖК Ильинские луга</a>
+                            <div class="card__term">Срок сдачи до 4 кв. 2022 г.</div>
+                            <div class="card__metro">Октябрьская</div>
+                            <div class="card__address">пр. Льва Толстого 180А</div>
+                        </div>
+                    </div>
+                
+
                 <button class="btn-more">
                     <img src="img/plus-circle.svg" alt="more">
                     Показать еще
                 </button>
             </div>
             <div class="sidebar">
+
+                
+
                 <form>
                     <div class="widget">
                         <div class="widget__title">
@@ -163,10 +221,10 @@
                         <div class="widget__body">
                             <div class="location">
                                 <div class="location__row">
-                                    <input class="location__checkbox" type="checkbox" id="location-01" checked> <label for="location-01" class="location__btn">&lt; 10</label>
-                                    <input class="location__checkbox" type="checkbox" id="location-02" checked> <label for="location-02" class="location__btn">10-20</label>
-                                    <input class="location__checkbox" type="checkbox" id="location-03"> <label for="location-03" class="location__btn">20-30</label>
-                                    <input class="location__checkbox" type="checkbox" id="location-04"> <label for="location-04" class="location__btn">30+</label>
+                                    <input data-location-param class="location__checkbox" type="checkbox" id="location-01"> <label for="location-01" class="location__btn">&lt; 10</label>
+                                    <input data-location-param class="location__checkbox" type="checkbox" id="location-02"> <label for="location-02" class="location__btn">10-20</label>
+                                    <input data-location-param class="location__checkbox" type="checkbox" id="location-03"> <label for="location-03" class="location__btn">20-30</label>
+                                    <input data-location-param class="location__checkbox" type="checkbox" id="location-04"> <label for="location-04" class="location__btn">30+</label>
                                 </div>
                                 <div class="location__row">
                                     <input class="location__checkbox" type="checkbox" id="location-05"> <label for="location-05" class="location__btn">Любая</label>
@@ -236,25 +294,25 @@
                             <span class="checkbox__fake"></span>
                             <span class="checkbox__title">Малоэтажный</span>
                         </label>
-                            <div class="widget__hidden">
-                                <label class="checkbox">
+                            
+                                <label class="checkbox checkbox--hidden">
                                 <input type="checkbox" class="checkbox__real" name="option6"> 
                                 <span class="checkbox__fake"></span>
                                 <span class="checkbox__title">Дополнительный пункт</span>
                             </label>
-                                <label class="checkbox">
+                                <label class="checkbox checkbox--hidden">
                                 <input type="checkbox" class="checkbox__real" name="option7"> 
                                 <span class="checkbox__fake"></span>
                                 <span class="checkbox__title">Дополнительный пункт</span>
                             </label>
-                                <label class="checkbox">
+                                <label class="checkbox checkbox--hidden">
                                 <input type="checkbox" class="checkbox__real" name="option8"> 
                                 <span class="checkbox__fake"></span>
                                 <span class="checkbox__title">Дополнительный пункт</span>
                             </label>
-                            </div>
+                            
 
-                            <button class="widget__show-hidden">Показать ище</button>
+                            <button type="button" data-option="hidden" class="widget__show-hidden">Показать ище</button>
                         </div>
                     </div>
 
@@ -271,7 +329,7 @@
                     <div class="widget">
                         <div class="widget__body">
                             <button class="form-btn form-btn--submit">Применить фильтры</button>
-                            <button class="form-btn">
+                            <button type="reset" class="form-btn">
                                 <img src="img/x.svg" alt="Сбросить фильтры">
                                 Сбросить фильтры</button>
                             </label>
@@ -281,6 +339,7 @@
             </div>
         </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
